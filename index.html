@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - CV</title>
+    <!--Favicon-->
+    <link href="assets/images/favicon.png" rel="icon">
+    <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=FontName:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Work Experience</a>
+</div>
+
+<!--Hero section-->
+<section id="hero" class="hero">
+    <h1>Nokuthaba Moyo</h1>
+    <p> 
+        <span class="typed">
+            <span class="word">Software Developer</span>
+        </span>
+    </p>
+</section>
+
+<section id="about" class="about">
+    <h2>About</h2>
+    <div class="about-content">
+        <img src="assets/images/profile.jpg" alt="Nokuthaba Moyo" class="profile-image">
+        <div class="about-text">
+            <p>
+                I'm a passionate software engineer with a strong foundation in computer science and a love for coding. 
+                My journey began during my college years, where I discovered the power of turning ideas into functional software. 
+                Since then, I've been dedicated to honing my skills and staying up-to-date with the ever-evolving tech industry.
+            </p>
+            <p>
+                I thrive in problem-solving, enjoy collaborating with cross-functional teams, and have experience working on a wide range of projects, from web applications to mobile apps. 
+                My goal is to create clean, efficient, and user-friendly software that makes a positive impact on people's lives.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class ="about">
+    <h2>Contact</h2>
+    <p>Name: Nokuthaba Moyo</p>
+    <p>Contact Number: +27631539976</p>
+    <p>Email: nokuthaba.m@outlook.com</p>
+
+    <!-- Social Media Profiles -->
+    <div id="social-media" class ="about">
+        
+        <a href="https://www.linkedin.com/in/nokuthaba-moyo-50a24487/">
+            <img src="assets/images/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/nokuthabam">
+            <img src="assets/images/github.png" alt="GitHub">
+        </a>
+    </div>
+</section>
+<section id="skills" class ="about">
+    <h2>Skills</h2>
+    <div>
+        <strong>Programming:</strong> Python, Node.js, Java, C++
+    </div>
+    <div>
+        <strong>Web Development:</strong> HTML, CSS, JavaScript, WordPress
+    </div>
+    <div>
+        <strong>Databases:</strong> MySQL, Firebase, Azure
+    </div>
+    <div>
+        <strong>Machine Learning:</strong> TensorFlow, Scikit-learn
+    </div>
+    <div>
+        <strong>Operating Systems:</strong> Windows, Linux
+    </div>
+</section>
+
+<section id="education" class ="about">
+    <h2>Education</h2>
+    <ul class="timeline">
+        <li class="event">
+            <div class="event-details">
+                MBBS, Jinzhou Medical University<br>
+                Sept 2015 - Apr 2019
+            </div>
+        </li>
+        <li class="event">
+            <div class="event-details">
+                BSc. in Computer Science, University of Witwatersrand<br>
+                Jan 2020 - Dec 2022
+            </div>
+        </li>
+        <li class="event">
+            <div class="event-details">
+                Software Engineering Bootcamp, Hyperion Dev<br>
+                May 2023 - Nov 2023
+            </div>
+        </li>
+    </ul>
+</section>
+
+<section id="experience" class ="about">
+    <h2>Work Experience</h2>
+    <ul class="timeline">
+        <li class="event">
+            <div class="event-details">
+                Health Care Assistant • NHS UK<br>
+                December 2013 – November 2014
+            </div>
+        </li>
+        <li class="event">
+            <div class="event-details">
+                Temp Sales Rep • Hello Fresh<br>
+                January 2015 – March 2015
+            </div>
+        </li>
+        <li class="event">
+            <div class="event-details">
+                Temp Call Centre Rep • OVO Energy<br>
+                April 2015 – July 2015
+            </div>
+        </li>
+        <li class="event">
+            <div class="event-details">
+                Private Tutor • Simply Tutors<br>
+                September 2022 - Present
+            </div>
+        </li>
+        <li class="event">
+            <div class="event-details">
+                Private Tutor • 4 Youth Tutors<br>
+                May 2022 - Present
+            </div>
+        </li>
+        <li class="event">
+            <div class="event-details">
+                Software Developer • NewNow<br>
+                November 2022 - Present
+            </div>
+        </li>
+    </ul>
+    <!-- Describe your work experience here -->
+</section>
+
+<footer>
+    &copy; 2023 Nokuthaba Moyo - <a href="#">GitHub</a> | <a href="attribution.html">Attribution</a></a>
+</footer>
+<script>
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1); // Get the target section ID
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                // Calculate the offset from the top (adjust as needed)
+                const offset = 80;
+                const targetOffset = targetSection.offsetTop - offset;
+
+                // Scroll smoothly to the target section
+                window.scroll({
+                    top: targetOffset,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+</script>
+</body>
+
+</html>
